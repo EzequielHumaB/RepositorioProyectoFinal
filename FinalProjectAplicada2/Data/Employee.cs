@@ -10,15 +10,26 @@ namespace FinalProjectAplicada2.Data
     {
         [Key]
         public int EmployeeId { get; set; }
+        
+        [Required(ErrorMessage ="Este campo no puede estar vacio")]
         public string Nombres { get; set; }
+        [Required(ErrorMessage ="Este campo no puede estar vacio")]
         public string Apellidos { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string Cedula { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string Nacionalidad { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string EstadoCivil { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public DateTime FechaNacimiento { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public decimal Salario { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public DateTime FechaIngreso { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string Celular { get; set; }
+        [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string Telefono { get; set; }
         public Employee()
         {
