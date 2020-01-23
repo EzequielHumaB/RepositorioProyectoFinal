@@ -12,5 +12,7 @@ namespace FinalProjectAplicada2.Data
         {
             base.OnConfiguring(optionsBuilder.UseSqlServer(@"Server=DESKTOP-B3FBQ4F;Database=ProyectoFinalAplicada2;Trusted_Connection=true"));
         }
+
+        public DbSet<Employee> Employees { get; set; }
     }
 }

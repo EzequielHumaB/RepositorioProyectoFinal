@@ -14,7 +14,7 @@ namespace FinalProjectAplicada2.Data
         public string Apellidos { get; set; }
         public string Cedula { get; set; }
         public string Nacionalidad { get; set; }
-        public String EstadoCivil { get; set; }
+        public string EstadoCivil { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public decimal Salario { get; set; }
         public DateTime FechaIngreso { get; set; }
