@@ -12,10 +12,13 @@ namespace FinalProjectAplicada2.Data
         public int EmployeeId { get; set; }
         
         [Required(ErrorMessage ="Este campo no puede estar vacio")]
+
+        [StringLength(50,ErrorMessage ="No se permite un nombre tan largo")]
         public string Nombres { get; set; }
         [Required(ErrorMessage ="Este campo no puede estar vacio")]
         public string Apellidos { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
+        [StringLength(10,ErrorMessage ="El campo cedula tiene 11 numeros")]
         public string Cedula { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public string Nacionalidad { get; set; }
@@ -24,12 +27,17 @@ namespace FinalProjectAplicada2.Data
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public DateTime FechaNacimiento { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
+
         public decimal Salario { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
         public DateTime FechaIngreso { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
+       
+        [StringLength(10,ErrorMessage = "Un celular solo tiene 10 numeros")]
         public string Celular { get; set; }
         [Required(ErrorMessage = "Este campo no puede estar vacio")]
+        
+        [StringLength(10,ErrorMessage ="Un telefono solo tiene 10 numeros")]
         public string Telefono { get; set; }
         public Employee()
         {
