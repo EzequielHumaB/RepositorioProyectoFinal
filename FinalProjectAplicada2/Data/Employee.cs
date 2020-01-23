@@ -9,7 +9,7 @@ namespace FinalProjectAplicada2.Data
     public class Employee
     {
         [Key]
-        public int EmpleadoId { get; set; }
+        public int EmployeeId { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string Cedula { get; set; }
@@ -22,7 +22,7 @@ namespace FinalProjectAplicada2.Data
         public string Telefono { get; set; }
         public Employee()
         {
-            EmpleadoId = 0;
+            EmployeeId = 0;
             Nombres = string.Empty;
             Apellidos = string.Empty;
             Cedula = string.Empty;
